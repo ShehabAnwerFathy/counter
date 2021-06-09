@@ -34,3 +34,23 @@ A new Flutter project.
     │   └─increment_and_decrement_operator_buttons.dart
     │
     └─main.dart
+    
+
+## packages
+[normal](https://pub.dev)
+
+((state management))
+bloc: ^7.0.0
+flutter_bloc: ^7.0.1
+
+((image processing packages))
+flutter_svg: ^0.22.0 [to display .svg images]
+
+((style))
+new_gradient_app_bar: ^0.2.0 [to get gradient app bar with custom colors]
+
+
+
+## Flutter SDK Version
+Flutter 2.2.0 • channel beta • https://github.com/flutter/flutter.git
+Tools • Dart 2.13.0

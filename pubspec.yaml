@@ -20,7 +20,7 @@ dependencies:
   #image processing packages
   flutter_svg: ^0.22.0 #to display .svg images
 
-  #styled
+  #style
   new_gradient_app_bar: ^0.2.0 #to get gradient app bar with custom colors
 
 
