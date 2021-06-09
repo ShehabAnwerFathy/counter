@@ -23,3 +23,7 @@ class DecrementCounterState extends CounterStates {
 class DecreaseValueCounterState extends CounterStates {
   DecreaseValueCounterState({required int counter}) : super(counter: counter);
 }
+
+class MinimumValueCounterStates extends CounterStates {
+  MinimumValueCounterStates({required int counter}) : super(counter: counter);
+}

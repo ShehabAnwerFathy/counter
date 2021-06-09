@@ -34,15 +34,18 @@ class CounterCubit extends Cubit<CounterStates> {
     if (canDecrease) {
       --counter;
       emit(DecrementCounterState(counter: counter));
+    } else {
+      emit(MinimumValueCounterStates(counter: counter));
     }
   }
 
   void decreaseValue(int value) {
     if (counter < value) {
       counter = 0;
+      emit(MinimumValueCounterStates(counter: counter));
     } else {
       counter -= value;
+      emit(DecreaseValueCounterState(counter: counter));
     }
-    emit(DecreaseValueCounterState(counter: counter));
   }
 }

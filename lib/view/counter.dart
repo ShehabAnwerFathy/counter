@@ -15,7 +15,11 @@ class CounterView extends StatelessWidget {
     return BlocProvider<CounterCubit>(
       create: (BuildContext context) => CounterCubit(),
       child: BlocConsumer<CounterCubit, CounterStates>(
-        listener: (BuildContext context, CounterStates state) {},
+        listener: (BuildContext context, CounterStates state) {
+          if(state is MinimumValueCounterStates){
+            print("Shehab");
+          }
+        },
         builder: (BuildContext context, CounterStates state) {
           return Scaffold(
             appBar: NewGradientAppBar(
