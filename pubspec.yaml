@@ -1,0 +1,40 @@
+name: counter
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  #state management
+  bloc: ^7.0.0
+  flutter_bloc: ^7.0.1
+
+  #image processing packages
+  flutter_svg: ^0.22.0 #to display .svg images
+
+  #styled
+  new_gradient_app_bar: ^0.2.0 #to get gradient app bar with custom colors
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.5.3
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+    - assets/flares/
+    - assets/lang/
+
